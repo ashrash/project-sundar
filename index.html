@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>/*Notify me*/</title>
+</head>
+<link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="bootstrap.js" rel="stylesheet" type="text/css" />
+<style>
+.other-color{
+    background: black
+  }
+  p
+  {
+  	color :white;
+  }
+ h1.a
+  {
+  	color :white;
+  }
+</style>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+ <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		  <a class="navbar-brand" href="#">Amrita</a>
+
+<div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+<ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Sign in</a></li>
+            <li class="active"><a href="./">Sign up</a></li>
+          </ul>
+</div>
+</div>
+
+<div class="container" id="main">
+	<div class="jumbotron other-color">
+	 
+        <h1 class="a">Amrita Notifications</h1>    
+		  
+        <p>What is happening at Amrita??</p>      
+   </div>
+
+</div>
+
+<div class="container">
+	<form action="notify.php" role="form" method="post">
+    	<div class="form-group">
+    		<label for="fname">Name:</label>
+    		<input type="text" class="form-control" name="user_name" id="user_name" placeholder="Enter Name">
+			<br/>
+    		<div class="form-group">
+				<label for="msg">Message:</label>
+    			<textarea type="text" class="form-control" name="notify_msg" id="notify_msg" placeholder="Enter Message"></textarea>
+				<br/>
+				<a href="" class="btn btn-defaul" id="openBtn"></a>
+    			<button type="submit" class="btn btn-default">Submit</button>
+			</div>
+    </form>
+</div>
+</div>
+<div class="modal-body">
+      <iframe src="notify2.php" width="100%" height="1000" frameborder="0"></iframe>
+</div>
+</body>
+</html>
